@@ -17,39 +17,68 @@
   <link href="css/sb-admin.css" rel="stylesheet">
 </head>
 
-<body class="bg-warning"><center>
-  <div class="container">
+<body>
+  
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <form class="login100-form validate-form">
+          <span class="login100-form-title p-b-26">
+            APLIKASI LAPANGAN
+          </span>
+          
+          <span class="login100-form-title p-b-48">
+            <i class="zmdi zmdi-font"></i>
+          </span>
 
-    <h1>Dashboard</h1>
-    <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Login</div>
-      <div class="card-body">
-        <form action="php/aksi.php" method="post">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Username</label>
-            <input class="form-control" id="exampleInputEmail1" name="username" type="text" aria-describedby="emailHelp" placeholder="Enter email">
+          <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+            <input class="input100" type="text" name="email">
+            <span class="focus-input100" data-placeholder="NIK"></span>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input class="form-control" id="exampleInputPassword1" name="password" type="password" placeholder="Password">
+
+          <div class="wrap-input100 validate-input" data-validate="Enter password">
+            <span class="btn-show-pass">
+              <i class="zmdi zmdi-eye"></i>
+            </span>
+            <input class="input100" type="password" name="pass">
+            <span class="focus-input100" data-placeholder="Password"></span>
           </div>
-          <div class="form-group">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Remember Password</label>
+
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <button class="login100-form-btn">
+                Login
+              </button>
             </div>
           </div>
-          <input class="btn btn-success btn-block" type="submit" name="login" value="Login">
-        </form>
 
+          <br><br>
+          
+        </form>
       </div>
     </div>
   </div>
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-</body>
+  
 
+  <div id="dropDownSelect1"></div>
+  
+<!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/daterangepicker/moment.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+  <script src="js/main.js"></script>
+
+</body>
 </html>
